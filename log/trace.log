@@ -174,3 +174,169 @@ Consider the following:
 2022-04-12 15:59:31.384 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
 2022-04-12 16:00:22.699 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
 2022-04-12 16:00:22.706 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-12 16:05:57.674 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 20916 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 16:05:57.675 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 16:05:57.700 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 16:05:57.700 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 16:05:58.178 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2022-04-12 16:05:58.184 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-12 16:05:58.184 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 16:05:58.184 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 16:05:58.223 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 16:05:58.223 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 523 ms
+2022-04-12 16:05:58.638 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 16:05:58.662 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2022-04-12 16:05:58.672 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-12 16:05:58.680 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.214 seconds (JVM running for 1.512)
+2022-04-12 16:05:58.682 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 16:05:58.682 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2022-04-12 16:06:06.182 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 16:06:06.183 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 16:06:06.183 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-12 16:06:06.218 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-12 16:06:06.309 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-12 19:39:16.364 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-12 19:39:16.373 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-12 21:01:42.456 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 33836 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 21:01:42.457 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 21:01:42.483 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 21:01:42.483 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 21:01:42.999 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2022-04-12 21:01:43.004 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-12 21:01:43.004 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 21:01:43.004 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 21:01:43.032 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 21:01:43.033 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 550 ms
+2022-04-12 21:01:43.445 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 21:01:43.473 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2022-04-12 21:01:43.475 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-04-12 21:01:43.478 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2022-04-12 21:01:43.478 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-04-12 21:01:43.480 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2022-04-12 21:01:43.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8080"]
+2022-04-12 21:01:43.484 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-12 21:01:43.492 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-04-12 21:02:07.200 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 34424 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 21:02:07.201 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 21:02:07.229 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 21:02:07.229 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 21:02:07.667 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-12 21:02:07.671 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-12 21:02:07.671 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 21:02:07.671 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 21:02:07.696 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 21:02:07.696 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 467 ms
+2022-04-12 21:02:08.045 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 21:02:08.070 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-12 21:02:08.080 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-12 21:02:08.087 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.095 seconds (JVM running for 1.389)
+2022-04-12 21:02:08.088 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 21:02:08.088 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-12 21:02:16.710 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 21:02:16.710 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 21:02:16.711 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-12 21:02:16.743 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-12 21:02:16.863 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-12 21:08:35.384 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-12 21:08:35.389 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-12 21:08:37.937 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 30880 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 21:08:37.938 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 21:08:37.961 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 21:08:37.961 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 21:08:38.413 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-12 21:08:38.417 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-12 21:08:38.417 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 21:08:38.417 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 21:08:38.444 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 21:08:38.444 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 482 ms
+2022-04-12 21:08:38.810 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 21:08:38.838 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-12 21:08:38.848 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-12 21:08:38.860 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.123 seconds (JVM running for 1.463)
+2022-04-12 21:08:38.861 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 21:08:38.862 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-12 21:08:43.650 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 21:08:43.651 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 21:08:43.651 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-12 21:08:43.689 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-12 21:08:43.782 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-12 21:29:26.572 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-12 21:29:26.582 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-12 22:29:53.934 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 27116 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 22:29:53.936 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 22:29:53.964 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 22:29:53.964 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 22:29:54.585 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-12 22:29:54.591 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-12 22:29:54.591 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 22:29:54.591 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 22:29:54.621 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 22:29:54.622 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 658 ms
+2022-04-12 22:29:55.121 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 22:29:55.155 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-12 22:29:55.175 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-12 22:29:55.187 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.55 seconds (JVM running for 2.097)
+2022-04-12 22:29:55.190 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 22:29:55.190 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-12 22:30:02.011 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 22:30:02.012 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 22:30:02.012 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-12 22:30:02.060 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-12 22:30:02.211 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-12 22:46:20.025 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-12 22:46:20.049 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-12 23:19:11.975 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 12440 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 23:19:11.976 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 23:19:12.001 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 23:19:12.001 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 23:19:12.470 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-12 23:19:12.475 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-12 23:19:12.475 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 23:19:12.475 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 23:19:12.508 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 23:19:12.508 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 507 ms
+2022-04-12 23:19:12.910 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 23:19:12.944 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-12 23:19:12.958 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-12 23:19:12.966 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.239 seconds (JVM running for 1.702)
+2022-04-12 23:19:12.968 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 23:19:12.968 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-12 23:19:43.870 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 23:19:43.871 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 23:19:43.871 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-12 23:19:44.101 INFO  com.baidu.aip.client.BaseClient                   :199  [32m                  [0;39m get access_token success. current state: STATE_AIP_AUTH_OK
+2022-04-12 23:23:56.549 INFO  e.d.p.config.PoetryAnalysisApplication            :55   [32m                  [0;39m Starting PoetryAnalysisApplication using Java 18 on Sayu with PID 7628 (C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis\target\classes started by 雪桜Sayu in C:\Users\雪桜Sayu\IdeaProjects\poetryAnalysis)
+2022-04-12 23:23:56.550 INFO  e.d.p.config.PoetryAnalysisApplication            :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-12 23:23:56.576 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-12 23:23:56.576 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-12 23:23:57.032 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-12 23:23:57.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-12 23:23:57.037 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-12 23:23:57.037 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-12 23:23:57.064 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-12 23:23:57.064 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 488 ms
+2022-04-12 23:23:57.432 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-12 23:23:57.459 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-12 23:23:57.473 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-12 23:23:57.481 INFO  e.d.p.config.PoetryAnalysisApplication            :61   [32m                  [0;39m Started PoetryAnalysisApplication in 1.142 seconds (JVM running for 1.465)
+2022-04-12 23:23:57.482 INFO  e.d.p.config.PoetryAnalysisApplication            :20   [32m                  [0;39m 启动成功！！
+2022-04-12 23:23:57.483 INFO  e.d.p.config.PoetryAnalysisApplication            :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-12 23:24:18.571 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 23:24:18.571 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-12 23:24:18.572 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-12 23:24:18.778 INFO  com.baidu.aip.client.BaseClient                   :199  [32m                  [0;39m get access_token success. current state: STATE_AIP_AUTH_OK

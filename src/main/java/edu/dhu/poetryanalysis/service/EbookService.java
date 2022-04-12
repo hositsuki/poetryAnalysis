@@ -20,7 +20,10 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public List<Ebook> list() {
-        return ebookMapper.selectByExample(null);
+    public List<Ebook> list(String name) {
+        EbookExample ebookExample = new EbookExample();
+        EbookExample.Criteria criteria = ebookExample.createCriteria();
+        criteria.andNameLike("%" + name + "%");
+        return ebookMapper.selectByExample(ebookExample);
     }
 }

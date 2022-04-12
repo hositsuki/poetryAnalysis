@@ -1,4 +1,4 @@
-GET http://localhost:8080/ebook/list
+GET http://localhost:8880/ebook/test?text=苹果是一家伟大的公司
 Accept: application/json
 
 ###
