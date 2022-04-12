@@ -1,5 +1,6 @@
 package edu.dhu.poetryanalysis.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @ComponentScan("edu.dhu")
 @SpringBootApplication
+@MapperScan("edu.dhu.poetryanalysis.mapper")
 public class PoetryAnalysisApplication {
     private static final Logger LOG = LoggerFactory.getLogger(PoetryAnalysisApplication.class);
 

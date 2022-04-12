@@ -4,6 +4,11 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: wikidevABC123
-    url: jdbc:mysql://rm-uf6470s9615e13hc4no.mysql.rds.aliyuncs.com/wikidev?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
-    username: wikidev
+    password: AsD775200
+    url: jdbc:mysql://localhost:3306/wiki?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: wiki
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+
+test:
+  hello: hello
