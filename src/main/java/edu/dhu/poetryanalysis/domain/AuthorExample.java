@@ -44,6 +44,23 @@ public class AuthorExample {
         return criteria;
     }
 
+    public AuthorExample orderBy(String orderByClause) {
+        this.setOrderByClause(orderByClause);
+        return this;
+    }
+
+    public AuthorExample orderBy(String ... orderByClauses) {
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < orderByClauses.length; i++) {
+            sb.append(orderByClauses[i]);
+            if (i < orderByClauses.length - 1) {
+                sb.append(" , ");
+            }
+        }
+        this.setOrderByClause(sb.toString());
+        return this;
+    }
+
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
         if (oredCriteria.size() == 0) {
@@ -53,7 +70,7 @@ public class AuthorExample {
     }
 
     protected Criteria createCriteriaInternal() {
-        Criteria criteria = new Criteria();
+        Criteria criteria = new Criteria(this);
         return criteria;
     }
 
@@ -61,6 +78,32 @@ public class AuthorExample {
         oredCriteria.clear();
         orderByClause = null;
         distinct = false;
+    }
+
+    public static Criteria newAndCreateCriteria() {
+        AuthorExample example = new AuthorExample();
+        return example.createCriteria();
+    }
+
+    public AuthorExample when(boolean condition, IExampleWhen then) {
+        if (condition) {
+            then.example(this);
+        }
+        return this;
+    }
+
+    public AuthorExample when(boolean condition, IExampleWhen then, IExampleWhen otherwise) {
+        if (condition) {
+            then.example(this);
+        } else {
+            otherwise.example(this);
+        }
+        return this;
+    }
+
+    public AuthorExample distinct(boolean distinct) {
+        this.setDistinct(distinct);
+        return this;
     }
 
     protected abstract static class GeneratedCriteria {
@@ -119,8 +162,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andIdEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id = ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andIdNotEqualTo(String value) {
             addCriterion("id <>", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdNotEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id <> ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -129,8 +182,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andIdGreaterThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id > ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andIdGreaterThanOrEqualTo(String value) {
             addCriterion("id >=", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdGreaterThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id >= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -139,8 +202,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andIdLessThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id < ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andIdLessThanOrEqualTo(String value) {
             addCriterion("id <=", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdLessThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("id <= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -189,8 +262,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andNameEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` = ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andNameNotEqualTo(String value) {
             addCriterion("`name` <>", value, "name");
+            return (Criteria) this;
+        }
+
+        public Criteria andNameNotEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` <> ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -199,8 +282,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andNameGreaterThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` > ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andNameGreaterThanOrEqualTo(String value) {
             addCriterion("`name` >=", value, "name");
+            return (Criteria) this;
+        }
+
+        public Criteria andNameGreaterThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` >= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -209,8 +302,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andNameLessThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` < ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andNameLessThanOrEqualTo(String value) {
             addCriterion("`name` <=", value, "name");
+            return (Criteria) this;
+        }
+
+        public Criteria andNameLessThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`name` <= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -259,8 +362,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andDescEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` = ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andDescNotEqualTo(String value) {
             addCriterion("`desc` <>", value, "desc");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescNotEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` <> ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -269,8 +382,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andDescGreaterThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` > ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andDescGreaterThanOrEqualTo(String value) {
             addCriterion("`desc` >=", value, "desc");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescGreaterThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` >= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -279,8 +402,18 @@ public class AuthorExample {
             return (Criteria) this;
         }
 
+        public Criteria andDescLessThanColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` < ").append(column.getEscapedColumnName()).toString());
+            return (Criteria) this;
+        }
+
         public Criteria andDescLessThanOrEqualTo(String value) {
             addCriterion("`desc` <=", value, "desc");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescLessThanOrEqualToColumn(Author.Column column) {
+            addCriterion(new StringBuilder("`desc` <= ").append(column.getEscapedColumnName()).toString());
             return (Criteria) this;
         }
 
@@ -316,9 +449,44 @@ public class AuthorExample {
     }
 
     public static class Criteria extends GeneratedCriteria {
+        private AuthorExample example;
 
-        protected Criteria() {
+        protected Criteria(AuthorExample example) {
             super();
+            this.example = example;
+        }
+
+        public AuthorExample example() {
+            return this.example;
+        }
+
+        @Deprecated
+        public Criteria andIf(boolean ifAdd, ICriteriaAdd add) {
+            if (ifAdd) {
+                add.add(this);
+            }
+            return this;
+        }
+
+        public Criteria when(boolean condition, ICriteriaWhen then) {
+            if (condition) {
+                then.criteria(this);
+            }
+            return this;
+        }
+
+        public Criteria when(boolean condition, ICriteriaWhen then, ICriteriaWhen otherwise) {
+            if (condition) {
+                then.criteria(this);
+            } else {
+                otherwise.criteria(this);
+            }
+            return this;
+        }
+
+        @Deprecated
+        public interface ICriteriaAdd {
+            Criteria add(Criteria add);
         }
     }
 
@@ -406,5 +574,13 @@ public class AuthorExample {
         protected Criterion(String condition, Object value, Object secondValue) {
             this(condition, value, secondValue, null);
         }
+    }
+
+    public interface ICriteriaWhen {
+        void criteria(Criteria criteria);
+    }
+
+    public interface IExampleWhen {
+        void example(edu.dhu.poetryanalysis.domain.AuthorExample example);
     }
 }
