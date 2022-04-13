@@ -3,10 +3,7 @@ package edu.dhu.poetryanalysis.controller;
 
 import edu.dhu.poetryanalysis.domain.Ebook;
 import edu.dhu.poetryanalysis.res.CommonRes;
-import edu.dhu.poetryanalysis.service.AnalysisService;
-import edu.dhu.poetryanalysis.service.EbookService;
-import edu.dhu.poetryanalysis.service.PoemAuthorService;
-import edu.dhu.poetryanalysis.service.WritePoemService;
+import edu.dhu.poetryanalysis.service.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -22,6 +19,9 @@ public class EbookController {
     @Resource
     private WritePoemService writePoemService;
 
+    @Resource
+    private UserService userService;
+
     private final AnalysisService analysisService = AnalysisService.getInstance();
 
     @GetMapping("/list")
@@ -36,7 +36,6 @@ public class EbookController {
     public CommonRes analysis(String text) {
         CommonRes<String> res = new CommonRes<>();
         res.setContent(analysisService.getRes(text));
-        writePoemService.writeToSQL();
         System.out.println("结束！");
         return res;
     }

@@ -20,52 +20,35 @@ import java.util.List;
 import java.util.Objects;
 
 import static edu.dhu.poetryanalysis.util.CommonUtils.getFiles;
+import static edu.dhu.poetryanalysis.util.CommonUtils.ins;
 
 @Service
-public class WritePoemService {
+public class WritePoemService implements Runnable{
 
     @Resource
     private PoemMapper poemMapper;
     @Resource
     private AuthorMapper authorMapper;
 
-    String path = "C:\\Users\\雪桜Sayu\\IdeaProjects\\chinese-poetry\\json";
-
-
     public void writeToSQL() {
-        ArrayList<String> files = getFiles(path);
-        for (String iter : files) {
-            try {
-                JsonArray array = JsonParser.parseReader(new FileReader(iter)).getAsJsonArray();
-                for (int i = 0; i < array.size(); i++) {
-                    JsonObject obj = array.get(i).getAsJsonObject();
-                    String id = obj.get("id").getAsString();
-                    String author = obj.get("author").getAsString();
-                    JsonArray paragraphs = obj.get("paragraphs").getAsJsonArray();
-                    StringBuilder par = new StringBuilder();
-                    for (int j = 0; j < paragraphs.size(); j++) {
-                        par.append(paragraphs.get(j).getAsString());
-                        par.append('\n');
-                    }
-                    String title = obj.get("title").getAsString();
-                    Poem poem = new Poem();
-                    poem.setId(id);
-                    poem.setAuthorName(author);
-                    poem.setParagraphs(par.toString());
-                    poem.setTitle(title);
+        ins.forEach(
+                obj->{
                     AuthorExample authorExample = new AuthorExample();
                     AuthorExample.Criteria criteria = authorExample.createCriteria();
-                    criteria.andNameEqualTo(author);
+                    criteria.andNameEqualTo(obj.getAuthorName());
                     List<Author> list = authorMapper.selectByExample(authorExample);
                     if (!list.isEmpty()) {
-                        poem.setAuthor(list.get(0).getId());
+                        obj.setAuthor(list.get(0).getId());
                     }
-                    poemMapper.insert(poem);
                 }
-            }
-            catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-        }
+        );
+        poemMapper.batchInsert(ins);
+    }
+
+
+
+    @Override
+    public void run() {
+
     }
 }
