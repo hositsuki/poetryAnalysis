@@ -5,8 +5,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: AsD775200
-    url: jdbc:mysql://localhost:3306/wiki?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
-    username: wiki
+    url: jdbc:mysql://localhost:3306/poem?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: poem
 mybatis:
   mapper-locations: classpath:/mapper/**/*.xml
 

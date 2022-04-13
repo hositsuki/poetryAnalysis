@@ -16,14 +16,22 @@
         <!-- 生成的实体类添加toString()方法 -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
 
+        <!-- 批量插入插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.BatchInsertPlugin">
+            <!--
+            开启后可以实现官方插件根据属性是否为空决定是否插入该字段功能
+            ！需开启allowMultiQueries=true多条sql提交操作，所以不建议使用！插件默认不开启
+            -->
+            <property name="allowMultiQueries" value="false"/>
+        </plugin>
         <!-- 不生成注释 -->
         <commentGenerator>
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/wiki?serverTimezone=Asia/Shanghai"
-                        userId="wiki"
+                        connectionURL="jdbc:mysql://localhost:3306/poem?serverTimezone=Asia/Shanghai"
+                        userId="poem"
                         password="AsD775200">
         </jdbcConnection>
 
@@ -46,6 +54,7 @@
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
         <!--<table tableName="user"/>-->
-        <table tableName="ebook"/>
+        <table tableName="author"/>
+        <table tableName="poem"/>
     </context>
 </generatorConfiguration>
