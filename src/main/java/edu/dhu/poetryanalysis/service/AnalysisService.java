@@ -3,10 +3,11 @@ package edu.dhu.poetryanalysis.service;
 
 import com.baidu.aip.nlp.AipNlp;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Objects;
-
+@Service
 public class AnalysisService {
     //设置APPID/AK/SK
     public static final String APP_ID = "25954989";

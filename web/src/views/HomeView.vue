@@ -52,7 +52,7 @@
         </a-menu>
       </a-layout-sider>
       <a-layout-content :style="{ padding: '0 24px', minHeight: '280px' }">
-        <a-list item-layout="vertical" size="large" :pagination="pagination" :data-source="listData">
+        <a-list item-layout="vertical" size="large" :pagination="pagination" :data-source="poems">
           <template #footer>
             <div>
               <b>ant design vue</b>
@@ -74,13 +74,13 @@
                     src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
                 />
               </template>
-              <a-list-item-meta :description="item.description">
+              <a-list-item-meta :description="item.authorName">
                 <template #title>
                   <a :href="item.href">{{ item.title }}</a>
                 </template>
                 <template #avatar><a-avatar :src="item.avatar" /></template>
               </a-list-item-meta>
-              {{ item.content }}
+              {{ item.paragraphs }}
             </a-list-item>
           </template>
         </a-list>
@@ -114,14 +114,14 @@ export default defineComponent({
     MessageOutlined,
   },
   setup(){
-    const ebook = ref();
+    const poems = ref();
     const ebook1 = reactive({books:[]});
     onMounted(()=>{
       console.log("onMounted");
-      axios.get("/ebook/list?name=Spring").then(
+      axios.get("/poem/list?title=即事").then(
           (response) => {
             const data = response.data;
-            ebook.value = data.content;
+            poems.value = data.content;
             ebook1.books = data.content;
             console.log(response);
           });
@@ -138,7 +138,7 @@ export default defineComponent({
       { type: 'MessageOutlined', text: '2' },
     ];
     return {
-      listData,
+      poems,
       pagination,
       actions,
     }
